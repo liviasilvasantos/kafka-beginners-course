@@ -20,7 +20,7 @@ CLUSTER_ID=$(bin/kafka-storage.sh random-uuid)
 ### Format the storage directory
 
 ```shell
-bin/kafka-storage.sh format -t $CLUSTER_ID -c config/server.properties
+bin/kafka-storage.sh format -t $CLUSTER_ID --standalone -c config/server.properties
 ```
 
 ### Boot the Kafka broker
